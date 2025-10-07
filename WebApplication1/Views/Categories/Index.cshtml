@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title> </title>
+</head>
+<body>
+    <h1>Categories Index Page</h1>
+    <ul>
+        @foreach (var hobby in @Model)
+        {
+            <li>Hobby: @hobby.Name <a href="/categories/details/@hobby.Id">details</a></li>
+        }
+    </ul>
+</body>
+</html>
+
