@@ -16,9 +16,9 @@ namespace WebApplication1.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Models.Category>().HasData(
-                new Models.Category { Id = 1, Name = "Electronics" },
-                new Models.Category { Id = 2, Name = "Books" },
-                new Models.Category { Id = 3, Name = "Clothing" }
+                new Models.Category { Id = 1, Name = "Electronics", Description = "this is a Electronics" },
+                new Models.Category { Id = 2, Name = "Books" , Description = "this is a Books" },
+                new Models.Category { Id = 3, Name = "Clothing" , Description = "this is a Clothing" }
 
 
                     );

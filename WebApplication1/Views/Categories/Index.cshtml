@@ -6,10 +6,16 @@
 </head>
 <body>
     <h1>Categories Index Page</h1>
+    <a href="/categories/create">Create </a>
     <ul>
         @foreach (var hobby in @Model)
         {
-            <li>Hobby: @hobby.Name <a href="/categories/details/@hobby.Id">details</a></li>
+            
+            <li>Hobby: @hobby.Name 
+                <a href="/categories/details/@hobby.Id" class="btn btn-outline-info">details</a>
+                <a href="/categories/delete/@hobby.Id" class="btn btn-outline-info">delete</a>
+                <a href="/categories/edit/@hobby.Id" class="btn btn-outline-info">edit</a>
+                </li>
         }
     </ul>
 </body>
