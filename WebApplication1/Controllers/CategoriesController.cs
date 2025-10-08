@@ -48,7 +48,7 @@ namespace WebApplication1.Controllers
             return View(category);
         }
 
-        // UPDATE (تنفيذ التعديل)
+        
         [HttpPost]
         public IActionResult Edit(Category c)
         {
